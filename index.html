@@ -13,7 +13,7 @@
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr 1fr;
     height: 100vh;
-    background-image: url('qpy.ppt.jpg'); 
+    background-image: url('https://s2.loli.net/2024/06/30/P2d7onXULm84D9A.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,14 +24,25 @@
     padding: 20px;
     margin: 10px;
   }
-  .back-button {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      z-index: 1000;
-      opacity: 0.5; /* 设置透明度为50% */
-  }
-
+ .back-arrow {
+ 		    position: absolute;
+ 		    top: 10px;
+ 		    left: 20px;
+ 		    width: 50px;
+ 		    height: 50px;
+ 		    background: none;
+ 		    border: none;
+ 		    cursor: pointer;
+ 		    display: flex;
+ 		    align-items: center;
+ 		    justify-content: center;
+ 		    color: white;
+ 		        }
+ 		.back-arrow:before {
+ 		    content: "←";
+ 		    font-size: 50px;
+ 			font-family: '楷体', 'SimKai', 'Microsoft YaHei', sans-serif;
+ 		        }
   .section1 {
     grid-row: 1;
     grid-column: 1 / span 2;
@@ -42,31 +53,31 @@
   .section2 {
     grid-row: 2;
     grid-column: 1;
-    min-height: 60px; /* 调整为两行文字的高度 */
-    max-height: 60px; /* 调整为两行文字的高度 */
+    min-height: 60px; 
+    max-height: 60px; 
   }
   .section3 {
     grid-row: 2;
     grid-column: 2;
-    min-height: 60px; /* 调整为两行文字的高度 */
-    max-height: 60px; /* 调整为两行文字的高度 */
+    min-height: 60px; 
+    max-height: 60px;
   }
   .section4 {
     grid-row: 3;
     grid-column: 1;
-    margin-top: -370px; /* 向上移动200像素 */
+    margin-top: -370px;
 	font-size: 1.2em;
   }
   .section5 {
     grid-row: 3;
     grid-column: 2;
-    margin-top: -370px; /* 向上移动200像素 */
+    margin-top: -370px; 
 	font-size: 1.2em;
   }
 </style>
 </head>
 <body>
-  <button class="back-button" onclick="window.location.href='https://gaoyv8888.github.io/EX1.3/'">返回</button>
+  <div class="back-arrow" onclick="window.location.href='https://gaoyv8888.github.io/EX1.3/'"></div>
   <div class="section section1">
     <p>清平乐·村居</p>
     <p>辛弃疾【宋】</p>
